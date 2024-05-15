@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    background-color: #c63035;
+    color: white;
+    max-width: 100%;
+}
+
+#nav-bar{
+    background-color: #b52026;
+    position: fixed;
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    top:0%;
+}
+
+#nav-bar a{
+    color: white;
+    padding: 17px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar a:hover{
+    background-color: rgb(253, 135, 0);
+    color: white;
+}
+
+#nav-bar a.active{
+    background-color: rgb(253, 135, 0);
+    color: white;
+}
+
+#nav-bar a.logo{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar a.logo img{
+    height: 30px;
+    width: 143px;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar .nav-links a {
+    padding: 17px 20px;
+    font-size: 22px;
+}
+
+.img-container{
+    border: 1px solid black;
+    height: 560px;
+    max-width: 100%;
+    padding-top: 60px;
+    position: relative;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mark-container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 1%;
+}
+
+.mark{
+    color: cyan;
+    font-size: 5em;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-content{
+    font-family: garamond;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.prods{
+    padding-top: 1px;
+}
+
+.prod-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    box-sizing: border-box;
+}
+
+.products img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prod-details{
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.locs{
+    padding-top: 1px;
+    text-align: center;
+}
+
+#map-container{
+    border: 1px solid black;
+    max-width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacts{
+    border: 10px solid black;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    border-style: outset;
+    box-sizing: border-box;
+}
+
+.contacts h1{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts h3{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button1{
+    font-size: 20px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid #b52026;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button1:hover{
+    background-color: #b52026;
+    color: white;
+    cursor: pointer;
+}
+
+.conts{
+    padding-top: 1px;
+    padding-bottom: 80px;
+}
+
+.abts{
+    padding-top: 1px;
+}
+
+.about-container{
+    text-align: center;
+    background-color: #b52026;
+    padding-bottom: 20px;
+    border-top: 2px solid black;
+}
+
+.about-container h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer{
+    font-family: garamond;
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .mark {
+        font-size: 2.5em;
+    }
+
+    .header-content {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .products {
+        height: 150px;
+        width: 150px;
+        margin: 25px;
+    }
+
+    .prod-details {
+        margin-top: 50px;
+    }
+
+    .contacts {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .button1 {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    #map-container {
+        height: 300px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    #nav-bar {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #nav-bar .nav-links {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav-bar .nav-links a {
+        padding: 9px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav-bar a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .mark {
+        font-size: 2em;
+    }
+
+    .header-content {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .products {
+        height: 120px;
+        width: 120px;
+        margin: 15px;
+    }
+
+    .prod-details {
+        margin-top: 30px;
+    }
+
+    .contacts {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .button1 {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #map-container {
+        height: 250px;
+    }
+}
